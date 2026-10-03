@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Elsa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            /* Background */
+            background: url('Background.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+            /* Membuat semua isi berada di tengah */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        /* Container utama */
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            padding: 20px;
+        }
+
+        /* Kotak gambar */
+        .image-box {
+            width: 80%;
+            max-width: 300px;
+
+            border-radius: 15px;
+            overflow: hidden;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+            margin-bottom: 20px;
+        }
+
+        /* Gambar */
+        .image-box img {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+        /* Tombol Next */
+        .next-button {
+            display: inline-block;
+
+            padding: 10px 25px;
+
+            background-color: #ff69b4;
+            color: white;
+
+            border: none;
+            border-radius: 25px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            cursor: pointer;
+            text-decoration: none;
+
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+
+            transition: 0.3s ease;
+        }
+
+        /* Efek ketika mouse diarahkan */
+        .next-button:hover {
+            background-color: #ff1493;
+
+            transform: scale(1.05);
+
+            box-shadow: 0 6px 15px rgba(255, 20, 147, 0.5);
+        }
+
+        /* Efek ketika tombol ditekan */
+        .next-button:active {
+            transform: scale(0.95);
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 480px) {
+
+            .image-box {
+                width: 85%;
+                max-width: 280px;
+            }
+
+            .next-button {
+                font-size: 16px;
+                padding: 9px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Gambar -->
+        <div class="image-box">
+            <img src="Foryou.jpg" alt="For You">
+        </div>
+
+        <!-- Tombol Next -->
+        <a href="pertama.html" class="next-button">
+            Next
+        </a>
+
+    </div>
+
+</body>
+</html>
